@@ -45,6 +45,10 @@
             this.tool_save = new System.Windows.Forms.ToolStripButton();
             this.tool_saveall = new System.Windows.Forms.ToolStripButton();
             this.tool_undo = new System.Windows.Forms.ToolStripButton();
+            this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
+            this.tool_TimKiem = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -59,7 +63,7 @@
             this.quảnLýSáchQuáHạnTrảToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(640, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(698, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -107,6 +111,7 @@
             this.quảnLíSáchToolStripMenuItem.Name = "quảnLíSáchToolStripMenuItem";
             this.quảnLíSáchToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
             this.quảnLíSáchToolStripMenuItem.Text = "&Quản lí sách";
+            this.quảnLíSáchToolStripMenuItem.Click += new System.EventHandler(this.quảnLíSáchToolStripMenuItem_Click);
             // 
             // cấpThẻVàInThẻĐọcGiảToolStripMenuItem
             // 
@@ -136,10 +141,14 @@
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tool_save,
             this.tool_saveall,
-            this.tool_undo});
+            this.tool_undo,
+            this.toolStripComboBox1,
+            this.tool_TimKiem,
+            this.toolStripTextBox1,
+            this.toolStripSeparator2});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(640, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(698, 25);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -170,15 +179,43 @@
             this.tool_undo.Size = new System.Drawing.Size(23, 22);
             this.tool_undo.Text = "toolStripButton3";
             // 
+            // toolStripComboBox1
+            // 
+            this.toolStripComboBox1.Items.AddRange(new object[] {
+            "Việt Nam",
+            "Hoa Kỳ",
+            "Trung Quốc",
+            "Nhật Bản"});
+            this.toolStripComboBox1.Name = "toolStripComboBox1";
+            this.toolStripComboBox1.Size = new System.Drawing.Size(121, 25);
+            // 
+            // tool_TimKiem
+            // 
+            this.tool_TimKiem.Name = "tool_TimKiem";
+            this.tool_TimKiem.Size = new System.Drawing.Size(56, 22);
+            this.tool_TimKiem.Text = "Tìm kiếm";
+            // 
+            // toolStripTextBox1
+            // 
+            this.toolStripTextBox1.Name = "toolStripTextBox1";
+            this.toolStripTextBox1.Size = new System.Drawing.Size(100, 25);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(640, 450);
+            this.ClientSize = new System.Drawing.Size(698, 510);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lí thư viện";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -206,6 +243,10 @@
         private System.Windows.Forms.ToolStripButton tool_save;
         private System.Windows.Forms.ToolStripButton tool_saveall;
         private System.Windows.Forms.ToolStripButton tool_undo;
+        private System.Windows.Forms.ToolStripComboBox toolStripComboBox1;
+        private System.Windows.Forms.ToolStripLabel tool_TimKiem;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
     }
 }
 
