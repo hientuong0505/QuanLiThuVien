@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frm_DocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DocGia.Designer.cs">
+      <DependentUpon>frm_DocGia.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_QLSach.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_DocGia.resx">
+      <DependentUpon>frm_DocGia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_QLSach.resx">
       <DependentUpon>frm_QLSach.cs</DependentUpon>
     </EmbeddedResource>

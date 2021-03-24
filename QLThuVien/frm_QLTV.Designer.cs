@@ -118,6 +118,7 @@
             this.cấpThẻVàInThẻĐọcGiảToolStripMenuItem.Name = "cấpThẻVàInThẻĐọcGiảToolStripMenuItem";
             this.cấpThẻVàInThẻĐọcGiảToolStripMenuItem.Size = new System.Drawing.Size(150, 20);
             this.cấpThẻVàInThẻĐọcGiảToolStripMenuItem.Text = "Cấp thẻ và in thẻ đọc giả";
+            this.cấpThẻVàInThẻĐọcGiảToolStripMenuItem.Click += new System.EventHandler(this.cấpThẻVàInThẻĐọcGiảToolStripMenuItem_Click);
             // 
             // quảnLýSáchChoMượnToolStripMenuItem
             // 

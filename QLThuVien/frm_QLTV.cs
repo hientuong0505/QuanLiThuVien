@@ -30,6 +30,25 @@ namespace QLThuVien
                 //Gắn con quản lí sách là con của form quản lí thư viện
                 qlsach.MdiParent = this;
                 qlsach.Show();
+            } else
+            {
+                //Kích hoạt lại nếu đã có
+                Application.OpenForms["frm_QLSach"].Activate();
+            }
+        }
+
+        private void cấpThẻVàInThẻĐọcGiảToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms["frm_DocGia"] == null)
+            {
+                frm_DocGia qldocgia = new frm_DocGia();
+
+                qldocgia.MdiParent = this;
+                qldocgia.Show();
+            }
+            else
+            {
+                Application.OpenForms["frm_DocGia"].Activate();
             }
         }
     }
