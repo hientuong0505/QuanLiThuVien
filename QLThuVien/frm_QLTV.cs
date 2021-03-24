@@ -51,5 +51,10 @@ namespace QLThuVien
                 Application.OpenForms["frm_DocGia"].Activate();
             }
         }
+
+        private void contextMenuStrip2_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
     }
 }

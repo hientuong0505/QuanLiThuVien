@@ -46,7 +46,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(508, 450);
             this.Controls.Add(this.button1);
+            this.Location = new System.Drawing.Point(100, 200);
             this.Name = "frm_DocGia";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "frm_DocGia";
             this.ResumeLayout(false);
 
