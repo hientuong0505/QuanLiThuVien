@@ -45,7 +45,7 @@
             this.tool_save = new System.Windows.Forms.ToolStripButton();
             this.tool_saveall = new System.Windows.Forms.ToolStripButton();
             this.tool_undo = new System.Windows.Forms.ToolStripButton();
-            this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
+            this.tool_ComboBox1 = new System.Windows.Forms.ToolStripComboBox();
             this.tool_TimKiem = new System.Windows.Forms.ToolStripLabel();
             this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
@@ -142,7 +142,7 @@
             this.tool_save,
             this.tool_saveall,
             this.tool_undo,
-            this.toolStripComboBox1,
+            this.tool_ComboBox1,
             this.tool_TimKiem,
             this.toolStripTextBox1,
             this.toolStripSeparator2});
@@ -179,15 +179,16 @@
             this.tool_undo.Size = new System.Drawing.Size(23, 22);
             this.tool_undo.Text = "toolStripButton3";
             // 
-            // toolStripComboBox1
+            // tool_ComboBox1
             // 
-            this.toolStripComboBox1.Items.AddRange(new object[] {
+            this.tool_ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Standard;
+            this.tool_ComboBox1.Items.AddRange(new object[] {
             "Việt Nam",
             "Hoa Kỳ",
             "Trung Quốc",
             "Nhật Bản"});
-            this.toolStripComboBox1.Name = "toolStripComboBox1";
-            this.toolStripComboBox1.Size = new System.Drawing.Size(121, 25);
+            this.tool_ComboBox1.Name = "tool_ComboBox1";
+            this.tool_ComboBox1.Size = new System.Drawing.Size(121, 25);
             // 
             // tool_TimKiem
             // 
@@ -217,6 +218,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lí thư viện";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
@@ -243,7 +245,7 @@
         private System.Windows.Forms.ToolStripButton tool_save;
         private System.Windows.Forms.ToolStripButton tool_saveall;
         private System.Windows.Forms.ToolStripButton tool_undo;
-        private System.Windows.Forms.ToolStripComboBox toolStripComboBox1;
+        private System.Windows.Forms.ToolStripComboBox tool_ComboBox1;
         private System.Windows.Forms.ToolStripLabel tool_TimKiem;
         private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;

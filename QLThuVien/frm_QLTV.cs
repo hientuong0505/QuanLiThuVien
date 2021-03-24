@@ -24,10 +24,13 @@ namespace QLThuVien
 
         private void quảnLíSáchToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frm_QLSach qlsach = new frm_QLSach();
-            //Gắn con quản lí sách là con của form quản lí thư viện
-            qlsach.MdiParent = this;
-            qlsach.Show();
+            if (Application.OpenForms["frm_QLSach"] == null)
+            {
+                frm_QLSach qlsach = new frm_QLSach();
+                //Gắn con quản lí sách là con của form quản lí thư viện
+                qlsach.MdiParent = this;
+                qlsach.Show();
+            }
         }
     }
 }
